@@ -6,6 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 User Dialog is a simple angular component which is used to send the selected data from the list of data displayed in the popup component(child component) 
 to the parent component and dispaly in table.  
 
+### user dialog with some data to be selcted (child component)
+![My Image](MyCollections/MyCollections/Angular/1 userDialog/user-dialog.png)
+
+### selected data displayed in table (Parent component)
+![My Image](MyCollections/MyCollections/Angular/1 userDialog/user-dialog-table.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
