@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
+## Summary
+Data Card is a simple tooltip component that is displayed on hover over the element. the data can be passed to the component using the input decorator.
+the number of rows to be displayed can also be passed through the input decorator.
+
+### image of the tooltip
+![My Image](data-card.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
