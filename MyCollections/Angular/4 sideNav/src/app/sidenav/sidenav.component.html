@@ -1,0 +1,10 @@
+<div id="mySidenav" class="sidenav" >
+  <button (click)="closeNav()" class="btn closebtn" id="closebtn"><i style="font-size:22px;" class="bi bi-arrow-left-circle"></i></button>
+  <h6 id="title" >{{Title}}</h6>
+  <hr>
+  <div *ngFor="let nav of navItemlist" style="margin-bottom:15px;">
+    <i [class]="nav.icon" *ngIf="showIcon"></i>
+    <a [routerLink]="nav.url" id="navLink" style="padding-left: 1px;" (click)="closeNav()">{{nav.name}}</a>
+  </div>
+</div>
+<button (click)="openNav()" class="btn" id="openbtn"><i class="bi bi-arrow-right-circle"></i></button>

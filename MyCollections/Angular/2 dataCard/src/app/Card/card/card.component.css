@@ -1,0 +1,8 @@
+.card{
+  border-color: #666666;
+}
+#myCanvas{
+  position:relative;
+  bottom:1px;
+  z-index: 2;
+}

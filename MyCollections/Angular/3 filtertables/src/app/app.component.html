@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <app-filter-comp [itemData]="itemData" (sendfilterData)="GetFilteredData($event)"></app-filter-comp>
+</div>
+
+<div class="container mt-3" >
+  <div class="row">
+    <table class="table table-striped">
+      <thead class="table-info">
+        <tr>
+          <th scope="col">Number</th>
+          <th scope="col">Url</th>
+          <th scope="col">Date</th>
+          <th scope="col">Asssigned User</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of recvFilteredData">
+          <td>{{data.number}}</td>
+          <td>{{data.url}}</td>
+          <td>{{data.createdDate|date: 'dd-MM-yyyy'}}</td>
+          <td>{{data.assignedUser}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

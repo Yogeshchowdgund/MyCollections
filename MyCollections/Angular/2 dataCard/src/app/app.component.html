@@ -1,0 +1,18 @@
+<div class="container my-5">
+  <div class="row text-center">
+    <h3>Data Card</h3>
+    <hr>
+  </div>
+  <div class="row text-center my-5">
+    <div class="col-md-2">
+      <div class="tooltips_cls" style="border:1px solid; border-radius: 10px;">Show Card</div>
+      <app-card [kpiData]="kpidata" [duration]="1000" [rows]="3" class="card-Data"></app-card>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <Input type="number" max="999999" onkeydown="return event.keyCode !== 69" onKeyPress="if(this.value.length==6) return false;">
+  </div>
+</div> -->
