@@ -7,10 +7,10 @@ User Dialog is a simple angular component which is used to send the selected dat
 to the parent component and dispaly in table.  
 
 ### user dialog with some data to be selcted (child component)
-![My Image](MyCollections/MyCollections/Angular/1 userDialog/user-dialog.png)
+![My Image](user-dialog.png)
 
 ### selected data displayed in table (Parent component)
-![My Image](MyCollections/MyCollections/Angular/1 userDialog/user-dialog-table.png)
+![My Image](user-dialog-table.png)
 
 
 ## Development server
