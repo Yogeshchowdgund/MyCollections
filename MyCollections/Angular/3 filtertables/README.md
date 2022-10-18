@@ -1,6 +1,12 @@
-# Filtertables
+# FilterTables
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+
+### Summary
+Filter table is multiple filter table component. data can be passed through the input decorator and filtered data can be recieved throught the output decorator.
+
+### Multiple filter table
+![My Image](filter-tables.png)
 
 ## Development server
 
