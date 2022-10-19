@@ -1,0 +1,31 @@
+<div style="border:1px solid grey; margin: 350px; padding: 50px; border-radius: 15px;">
+<h1>Login</h1>
+<p *ngIf="wrongCred" style="color:red;" >Wrong username/ password</p>
+
+  <form  [formGroup]="loginForm" id="form" #form="ngForm" (ngSubmit)="loginForm.valid && login()" >
+      <div class="form-group" >
+          <label for="username" >UserName : </label>
+          <input type="email" class="form-control" formControlName="username">
+          <span style="color:red;" class="form-control-error" *ngIf="!loginForm.get('username')!.valid && loginForm.get('username')!.touched" >
+            Username is required.
+          </span>
+          <span style="color:red;" class="form-control-error" *ngIf="form.submitted && !loginForm.get('username')!.valid" >
+            Field is required
+          </span>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="password" >password : </label>
+        <input type="password" class="form-control" formControlName="password">
+        <span style="color:red;" class="form-control-error" *ngIf="!loginForm.get('password')!.valid && loginForm.get('password')!.touched" >
+          The password is required.
+        </span>
+        <span style="color:red;" class="form-control-error" *ngIf="form.submitted && !loginForm.get('password')!.valid" >
+          Field is required
+        </span>
+      </div>
+      <br>
+      <button type="submit">Log In</button>
+  </form>
+
+</div>
